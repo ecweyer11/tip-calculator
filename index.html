@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <!-- 
+      1.) Form for Bill Amount after tax <input type=text>
+      2.) Service Quality (5% Horrible, 10% Bad, 15% Ok, 20% Good, 25% Great) <select> <options value=>
+      3.) Amount of People <input type=number>
+    -->
+    <div class="calc-container">
+      <h1>Tip Calculator</h1>
+      <!-- Calculator Start -->
+      <section class="calculator">
+        <form>
+          <p>How much was your bill?</p>
+          <label for="bill-amount">$</label>
+          <input
+            id="bill-amount"
+            tabindex="1"
+            type="number"
+            min="0.01"
+            title=""
+            placeholder="Bill Amount"
+            autocomplete="off"
+            required
+          />
+          <p>How was your service?</p>
+          <select id="service-quality" tabindex="1" title="" required>
+            <option disabled selected value="0">
+              <-- Choose an Option -->
+            </option>
+            <option value="0.05">5% | Horrible</option>
+            <option value="0.10">10% | Bad</option>
+            <option value="0.15">15% | Ok</option>
+            <option value="0.20">20% | Good</option>
+            <option value="0.25">25% | Great</option>
+          </select>
+          <p>How many people are there sharing the bill?</p>
+          <input
+            id="people-sharing"
+            tabindex="2"
+            type="number"
+            min="1"
+            title=""
+            placeholder="Amount of People"
+            autocomplete="off"
+            required
+          />
+          <div class="buttons">
+            <button type="button" id="calculate">Calculate Tip!</button>
+            <button type="reset" id="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+      <!-- Calculator End-->
+      <section id="total-tip">
+        <sup>$</sup>
+        <span id="tip">0.00</span>
+        <small id="each">each</small>
+      </section>
+    </div>
+    <h6>Built By @c10udy on GitHub</h6>
+  </body>
+  <script src="script.js"></script>
+</html>

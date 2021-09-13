@@ -1,0 +1,196 @@
+body {
+  background-color: #1e1e1e;
+  text-align: center;
+  font-family: "Sora", sans-serif;
+}
+body h6 {
+  color: #525252;
+  font-weight: light;
+  letter-spacing: 1px;
+}
+
+.calc-container {
+  display: inline-block;
+  background-color: #292929;
+  box-shadow: 1px 1px 101px -4px rgba(0, 0, 0, 0.51);
+  border-radius: 1rem;
+  width: 35em;
+  height: 40em;
+  user-select: none;
+  margin-top: 6.5%;
+}
+
+.calc-container h1 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: rgb(106, 175, 255);
+  background: linear-gradient(
+    100deg,
+    rgba(106, 175, 255, 1) 0%,
+    rgba(0, 99, 214, 1) 100%
+  );
+  margin: 0;
+  padding: 20px 100px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.calculator p {
+  color: white;
+}
+
+.calculator label {
+  color: white;
+  letter-spacing: 5px;
+}
+
+#bill-amount {
+  color: white;
+  background-color: #1e1e1e;
+  border: 0px;
+  border-radius: 5px;
+  padding: 7.5px;
+}
+#bill-amount:focus {
+  outline: 2px dashed #0063d6;
+}
+
+#service-quality {
+  color: white;
+  background-color: #1e1e1e;
+  border: 0px;
+  border-radius: 5px;
+  padding: 7.5px;
+}
+#service-quality:focus {
+  outline: 2px dashed #0063d6;
+}
+
+#people-sharing {
+  color: white;
+  background-color: #1e1e1e;
+  border: 0px;
+  border-radius: 5px;
+  padding: 7.5px;
+}
+#people-sharing:focus {
+  outline: 2px dashed #0063d6;
+}
+
+.buttons {
+  margin-top: 1em;
+}
+.buttons #calculate:active {
+  position: relative;
+  top: 1px;
+}
+.buttons #reset:active {
+  position: relative;
+  top: 1px;
+}
+
+.buttons #calculate {
+  color: white;
+  background-color: rgba(0, 100, 214, 0.2);
+  border: 2px dashed #0063d6;
+  border-radius: 5px;
+  margin-right: 5px;
+  padding: 7.5px;
+}
+.buttons #calculate:hover {
+  cursor: pointer;
+  background-color: rgba(0, 100, 214, 0.3);
+}
+.buttons #calculate:focus {
+  outline: 2px solid #1e1e1e;
+}
+
+.buttons #reset {
+  color: white;
+  background-color: rgba(214, 0, 0, 0.2);
+  border: 2px dashed #d60000;
+  border-radius: 5px;
+  margin-left: 5px;
+  padding: 7.5px;
+}
+.buttons #reset:hover {
+  cursor: pointer;
+  background-color: rgba(214, 0, 0, 0.3);
+}
+.buttons #reset:focus {
+  outline: 2px solid #1e1e1e;
+}
+
+#total-tip {
+  color: white;
+  padding: 1em;
+  font-size: 2.25rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#total-tip sup {
+  font-size: 20px;
+}
+
+#total-tip:before {
+  content: "Tip Amount:";
+  font-weight: 500;
+  font-size: 1.25rem;
+  display: block;
+  text-transform: uppercase;
+  font-family: "Sora", monospace;
+  color: #6aafff;
+}
+
+#total-tip small {
+  color: #6aafff;
+  font-size: 20px;
+  display: block;
+  font-weight: 100;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .calc-container {
+    display: inline-block;
+    background-color: #292929;
+    box-shadow: 1px 1px 101px -4px rgba(0, 0, 0, 0.51);
+    border-radius: 1rem;
+    width: 15em;
+    height: 33em;
+    user-select: none;
+    margin-top: 3%;
+  }
+  .calc-container h1 {
+    font-size: 15px;
+    padding: 10px 10px;
+    margin-bottom: 1.5rem;
+  }
+  #total-tip {
+    font-size: 1.75rem;
+  }
+
+  #total-tip sup {
+    font-size: 15px;
+  }
+
+  #total-tip:before {
+    content: "Tip Amount:";
+    font-weight: 500;
+    font-size: 1rem;
+    display: block;
+    text-transform: uppercase;
+    font-family: "Sora", monospace;
+    color: #6aafff;
+  }
+
+  #total-tip small {
+    color: #6aafff;
+    font-size: 15px;
+    display: block;
+    font-weight: 100;
+  }
+}
