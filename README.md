@@ -16,11 +16,6 @@
 index.html
 ```
 
-## Domain
-* Work in progress: will be linked below.
-#
-*Disclaimer: This is not a production build. This is an open-source project. You can download this project and run it inside the browser.*
-
 ## Author
 
 👤 **c10udy**
