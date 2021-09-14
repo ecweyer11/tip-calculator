@@ -11,8 +11,7 @@ function tipCalculator() {
   }
 
   // Check to see if this input is empty
-  if (peopleSharing == 0) {
-    peopleSharing = 1;
+  if (peopleSharing == 1) {
     document.getElementById("each").style.display = "none";
   } else {
     document.getElementById("each").style.display = "block";
